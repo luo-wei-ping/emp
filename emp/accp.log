@@ -1,0 +1,5 @@
+2019-02-13 10:04:50  org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:135)  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2019-02-13 10:04:50  org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:316)  PooledDataSource forcefully closed/removed all connections.
+2019-02-13 10:04:50  org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:316)  PooledDataSource forcefully closed/removed all connections.
+2019-02-13 10:04:50  org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:316)  PooledDataSource forcefully closed/removed all connections.
+2019-02-13 10:04:50  org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:316)  PooledDataSource forcefully closed/removed all connections.

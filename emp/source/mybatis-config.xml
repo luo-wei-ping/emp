@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+ <!-- 类路径下的 properties 文件 -->
+<properties resource="config.Properties">
+
+</properties>
+<!-- 别名 -->
+<!-- <typeAliases>
+	<typeAlias type="com.yidu.pojo.Employees" alias="User"/>
+	别名包及其子包下所有类 首字母不区分大小写
+	<package name="com.yidu.pojo"/>
+</typeAliases>
+设置内部属性
+	<property name="dbname" value="scott"/>
+
+<environments default="development">
+   		<environment id="development">
+   			<transactionManager type="JDBC" />
+   			<dataSource type="POOLED">
+   				<property name="driver" value="${driver}" />
+   				<property name="username" value="${dbname}" />
+   			</dataSource> -->
+<!-- 数据库相关配置使用spring整合的时候可以不用了 -->
+  <environments default="development">
+    <environment id="development">
+      <transactionManager type="JDBC"/>
+      <dataSource type="POOLED">
+        <property name="driver" value="${driver}"/>
+        <property name="url" value="jdbc:oracl:thin:@127.0.0.1:1521:ORCL11"/>
+        <property name="username" value="scott"/>
+        <property name="password" value="tiger"/>
+      </dataSource>
+    </environment>
+  </environments>
+<!--   数据库相关配置映射配置文件路径 -->
+  <mappers>
+    <mapper class="com.yidu.mapper.Employess"/>
+    <package name="com.yidu.mapper"/>
+  </mappers> 
+</configuration>

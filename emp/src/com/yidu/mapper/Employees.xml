@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  <!-- SQL语句 -->
+<mapper namespace="com.yidu.mapper.EmployeesDao">
+ 	<select id="queryEmployessById" parameterType="int" resultType="com.yidu.pojo.Employees">
+ 		select *from employees where employee_id = #{id}
+ 	</select>
+ 	<select id="allQueryEmployess" parameterType="Employees" resultType="Employees">
+ 		select *from employees
+ 	</select>
+ 	<insert id="addEmployess" parameterType="com.yidu.pojo.Employees">
+ 		insert into employees(employeesId,lastName,email,hireDate,jobId) values(#{employeesId},#{lastName},#{email},#{hireDate},#{jobId})
+ 	</insert>
+ 	<delete id="delEmployess">
+ 	</delete>
+ 	<update id="updateEmployess" parameterType="com.yidu.pojo.Employees">
+ 		
+ 	</update>
+</mapper>
